@@ -1,0 +1,23 @@
+{
+  "name": "proof-of-humanity-testnet",
+  "version": "1.0.0",
+  "description": "Proof of Humanity testnet version. Integrate it to your project testnet version for testing purposes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gazzeth/proof-of-humanity-testnet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gazzeth/proof-of-humanity-testnet/issues"
+  },
+  "homepage": "https://github.com/gazzeth/proof-of-humanity-testnet#readme",
+  "devDependencies": {
+    "hardhat": "^2.2.1"
+  }
+}
