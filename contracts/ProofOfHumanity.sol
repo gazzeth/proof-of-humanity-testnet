@@ -25,8 +25,8 @@ contract ProofOfHumanity is IProofOfHumanity {
         return superUserAllowed;
     }
 
-    function isSelfVouchingAllowed() external view returns (bool) {
-        return superUserAllowed;
+    function isSelfRegistrationAllowed() external view returns (bool) {
+        return selfRegistrationAllowed;
     }
 
     function isSubmitted(address _address) external view returns (bool) {
