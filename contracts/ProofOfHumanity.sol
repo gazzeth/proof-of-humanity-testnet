@@ -70,7 +70,7 @@ contract ProofOfHumanity is IProofOfHumanity {
     }
 
     function register(address _address) external {
-        require(registry[_address].registered, "Already registered");
+        require(!registry[_address].registered, "Already registered");
         require(msg.sender != _address || selfRegistrationAllowed, "Self registration not allowed in this version");
         if (msg.sender != _address) {
             require(registry[msg.sender].registered, "You must be registered before registering others");
