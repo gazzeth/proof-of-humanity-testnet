@@ -1,11 +1,30 @@
 # proof-of-humanity-testnet
-Proof of Humanity testnet version. Integrate it to your project testnet version for testing purposes. 
+
+[![Build Status](https://travis-ci.com/gazzeth/proof-of-humanity-testnet.svg?branch=master)](https://travis-ci.com/gazzeth/proof-of-humanity-testnet) [![Coverage Status](https://coveralls.io/repos/github/gazzeth/proof-of-humanity-testnet/badge.svg)](https://coveralls.io/github/gazzeth/proof-of-humanity-testnet)
+
+[Proof of Humanity](https://github.com/Proof-Of-Humanity) ad-hoc testnet version. 
+
+## Why was this project built?
+
+It allows you to test [Proof of Humanity](https://github.com/Proof-Of-Humanity) integration to your project, avoiding posting videos for being registered, waiting for challenges to be done and so on. You can deploy your own version of this contract allowing self-registration and super users (addresses with full control that makes mucho more easier to test different scenarios) as parameters.
+
+## Contributing
+
+Feel free to open an issue, fork or submit a pull request!
+
+## Setup
 
 Install dependencies:
-```npm install```
+```
+npm install
+```
 
 Compile code:
-```npx hardhat compile```
+```
+npx hardhat compile
+```
 
 Run tests:
-```npx hardhat test```
+```
+npx hardhat test
+```
