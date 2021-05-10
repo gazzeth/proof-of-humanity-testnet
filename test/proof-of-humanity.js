@@ -74,4 +74,23 @@ describe("Proof of Humanity contract", function() {
             ).to.be.revertedWith("Can't be registered but not submitted");
         });
     });
+
+    describe("Non super user nor self registration allowed", async function() {
+
+        let deployer;
+        let address1;
+        let address2;
+        let proofOfHumanity;
+
+        before(async function() {
+            [deployer, address1, address2, ...addresses] = await ethers.getSigners();
+            let ProofOfHumanity = await ethers.getContractFactory("ProofOfHumanity");
+            proofOfHumanity = await ProofOfHumanity.deploy(_superUserAllowed = false, _selfRegistrationAllowed = false);
+        });
+
+        it("Deployment shoud not allow super users nor self regristation", async function() {
+            expect(await proofOfHumanity.isSuperUserAllowed()).to.equal(false);
+            expect(await proofOfHumanity.isSelfRegistrationAllowed()).to.equal(false);
+        });
+    });
 });
