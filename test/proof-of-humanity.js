@@ -63,7 +63,7 @@ describe("Proof of Humanity contract", function() {
             expect(await proofOfHumanity.isSuperUser(address1.address)).to.equal(true);
             expect(await proofOfHumanity.getSubmittedQuantity()).to.equal(2);
             expect(await proofOfHumanity.getRegisteredQuantity()).to.equal(2);
-            expect(await proofOfHumanity.getSuperUserQuantity()).to.equal(69);
+            expect(await proofOfHumanity.getSuperUserQuantity()).to.equal(2);
         });
 
         it("Super user can not set address as registered without setting it as submitted too", async function() {
