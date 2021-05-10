@@ -74,7 +74,7 @@ contract ProofOfHumanity is IProofOfHumanity {
         require(msg.sender != _address || selfRegistrationAllowed, "Self registration not allowed in this version");
         if (msg.sender != _address) {
             require(registry[msg.sender].registered, "You must be registered before registering others");
-            require(registry[msg.sender].submitted, "Address must perform submission before being registered");
+            require(registry[_address].submitted, "Address must perform submission before being registered");
         }
         registeredQuantity++;
         registry[_address].registered = true;
