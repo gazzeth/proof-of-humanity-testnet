@@ -8,6 +8,5 @@ install:
 
 script:
   - npx hardhat coverage
-  - cat coverage/lcov.info | coveralls
 
 cache: npm
