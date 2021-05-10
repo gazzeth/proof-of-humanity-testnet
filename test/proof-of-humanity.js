@@ -92,5 +92,15 @@ describe("Proof of Humanity contract", function() {
             expect(await proofOfHumanity.isSuperUserAllowed()).to.equal(false);
             expect(await proofOfHumanity.isSelfRegistrationAllowed()).to.equal(false);
         });
+
+
+        it("Deployment should register the deployer as common address and set quantities", async function() {
+            expect(await proofOfHumanity.isSubmitted(deployer.address)).to.equal(true);
+            expect(await proofOfHumanity.isRegistered(deployer.address)).to.equal(true);
+            expect(await proofOfHumanity.isSuperUser(deployer.address)).to.equal(false);
+            expect(await proofOfHumanity.getSubmittedQuantity()).to.equal(1);
+            expect(await proofOfHumanity.getRegisteredQuantity()).to.equal(1);
+            expect(await proofOfHumanity.getSuperUserQuantity()).to.equal(0);
+        });
     });
 });
