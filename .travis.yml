@@ -7,7 +7,9 @@ install:
   - npm install
 
 script:
-  - npx hardhat test
   - npx hardhat coverage
+
+after_success:
+  - cat coverage/lcov.info | npx coveralls
 
 cache: npm
