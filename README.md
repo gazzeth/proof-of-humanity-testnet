@@ -4,9 +4,12 @@
 
 [![Build Status](https://travis-ci.com/gazzeth/proof-of-humanity-testnet.svg?branch=master)](https://travis-ci.com/gazzeth/proof-of-humanity-testnet) [![Coverage Status](https://coveralls.io/repos/github/gazzeth/proof-of-humanity-testnet/badge.svg)](https://coveralls.io/github/gazzeth/proof-of-humanity-testnet)
 
+**Ropsten Address:** [0x9b1590A4D36255b3b18Bb681062FD159f809009f](http://ropsten.etherscan.io/address/0x9b1590A4D36255b3b18Bb681062FD159f809009f)
+
+
 ## Why was this project built?
 
-It allows you to test [Proof of Humanity](https://github.com/Proof-Of-Humanity) integration to your project, avoiding posting videos, being vouchet, waiting days for beign registered and so on. You can deploy your own version of this contract allowing self-registration and super users (addresses with full control that makes mucho more easier to test different scenarios) as parameters.
+It allows you to test [Proof of Humanity](https://github.com/Proof-Of-Humanity) integration to your project, avoiding posting videos, being vouchet, waiting days for beign registered and so on. You can deploy your own version of this contract allowing self-registration and super users (addresses with full control that makes much more easier to test different scenarios) as parameters.
 
 ## Contributing
 
