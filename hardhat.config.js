@@ -10,13 +10,13 @@ require("@nomiclabs/hardhat-etherscan");
 
 module.exports = {
   solidity: "0.7.6",
-  networks: {
-    // ropsten: {
-    //   url: `https://ropsten.infura.io/v3/${INFURA_PROJECT_ID}`,
-    //   accounts: [`0x${ROPSTEN_PRIVATE_KEY}`]
-    // }
-  },
-  etherscan: {
-    // apiKey: `${ETHERSCAN_API_KEY}`
-  }
+  // networks: {
+  //   ropsten: {
+  //     url: `https://ropsten.infura.io/v3/${INFURA_PROJECT_ID}`,
+  //     accounts: [`0x${ROPSTEN_PRIVATE_KEY}`]
+  //   }
+  // },
+  // etherscan: {
+  //   apiKey: `${ETHERSCAN_API_KEY}`
+  // }
 };
